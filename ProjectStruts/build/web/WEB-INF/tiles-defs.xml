@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+
+<!--
+     This is a blank Tiles definition file with a commented example.
+-->
+
+<tiles-definitions>
+
+    <definition name="baseLayout" path="/common/layout/baseLayout.jsp">
+        <put name="title" value="Sistem Informasi Akademik" />
+        <put name="header" value="/common/template/header.jsp" />
+        <put name="menu"   value="/common/template/menu.jsp" />
+        <put name="body"   value="/common/template/body.jsp" />
+        <put name="footer" value="/common/template/footer.jsp" />
+    </definition>
+ 
+    <definition name="home" extends="baseLayout">
+        <put name="title"  value="Sistem Informasi Akademik" />
+        <put name="body"   value="/common/pages/home.jsp" />
+    </definition>
+    
+    <definition name="mahasiswa" extends="baseLayout">
+        <put name="title"  value="Mahasiswa" />
+        <put name="body"   value="/common/pages/mahasiswa.jsp" />
+    </definition>
+    
+    <definition name="dosen" extends="baseLayout">
+        <put name="title"  value="Dosen" />
+        <put name="body"   value="/common/pages/dosen.jsp" />
+    </definition>
+    
+    <definition name="matakuliah" extends="baseLayout">
+        <put name="title"  value="Matakuliah" />
+        <put name="body"   value="/common/pages/matakuliah.jsp" />
+    </definition>
+    
+    <definition name="list_mhs" extends="baseLayout">
+        <put name="title"  value="Tampil Data Mahasiswa" />
+        <put name="body"   value="/common/pages/tampilMahasiswa.jsp" />
+    </definition>
+    
+    <definition name="list_dos" extends="baseLayout">
+        <put name="title"  value="Tampil Data Dosen" />
+        <put name="body"   value="/common/pages/tampilDosen.jsp" />
+    </definition>
+    
+    <definition name="list_mat" extends="baseLayout">
+        <put name="title"  value="Tampil Data Matakuliah" />
+        <put name="body"   value="/common/pages/tampilMatakuliah.jsp" />
+    </definition>
+    
+    <definition name="update_mhs" extends="baseLayout">
+        <put name="title"  value="Update Mahasiswa" />
+        <put name="body"   value="/common/pages/updateMahasiswa.jsp" />
+    </definition>
+    
+    <definition name="update_dos" extends="baseLayout">
+        <put name="title"  value="Update Dosen" />
+        <put name="body"   value="/common/pages/updateDosen.jsp" />
+    </definition>
+    
+    <definition name="update_mat" extends="baseLayout">
+        <put name="title"  value="Update Matakuliah" />
+        <put name="body"   value="/common/pages/updateMatakuliah.jsp" />
+    </definition>
+    
+    <!-- sample tiles definitions
+    <definition name=".mainLayout" path="/common/layouts/classicLayout.jsp">
+        <put name="title"  value="Sample Page Title" />s
+        <put name="header" value="/common/header.jsp" />
+        <put name="menu"   value=".mainMenu" />
+        <put name="footer" value="/common/footer.jsp" />
+        <put name="body"   value=".portal.body" />
+    </definition>
+
+    <definition name=".mainMenu" path="/common/layouts/vboxLayout.jsp" >
+        <putList name="list" >
+            <add value=".menu.links" />
+            <add value=".menu.taglib.references" />
+            <add value=".menu.printer.friendly" />
+            <add value=".menu.old.documents" />
+      </putList>
+    </definition>
+
+    <definition name="aPage" extends=".mainLayout">
+        <put name="title"  value="Another Title" />
+        <put name="body"   value=".aPage.body" />
+    </definition>
+
+    end samples -->
+
+    <definition name="${YOUR_DEFINITION_HERE}">
+    </definition>
+
+</tiles-definitions>
